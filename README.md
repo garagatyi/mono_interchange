@@ -16,7 +16,8 @@
 ## Обмеження
 
 - Only for Mono API.
-- Only for Mono Mastercard.
+- Only for Mono Mastercard regular card. Iron, platinum or visa cards calculations would be different.
+- Command for downloading spendings report is for default account. If you spend from White card it won't be taken into account.
 - Doesn't handle partial and full refunds properly. E.g. when WOG pay charges higher amount for full trunk and then refund difference with actual gas used. In this case, calculation shows higher Mono earnings than actual
 - Doesn't take into account if operation is with international acquiring (e.g. pay for Apple music). In this case, calculation shows lower Mono earnings than actual
 - Uses assumed lowest possible interchange rate. Thus calculation shows lower Mono earnings than actual.
